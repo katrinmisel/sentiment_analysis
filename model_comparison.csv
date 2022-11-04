@@ -1,11 +1,13 @@
-,Name,Loss,Accuracy,Training time
-0,perf_simple_homemade_wiki2vec.h5,0.6245622038841248,0.643833339214325,10.64547038078308
-1,perf_simple_homemade_glove.h5,0.579164445400238,0.6942499876022339,10.88407850265503
-2,perf_simple_tweetprep_wiki2vec.h5,0.6065899133682251,0.674916684627533,6.712278127670288
-3,perf_simple_tweetprep_glove.h5,0.5574378371238708,0.718833327293396,5.305057525634766
-4,perf_simple_noclean_glove.h5,0.5687053799629211,0.7132499814033508,10.646015167236328
-5,perf_advanced_homemade_wiki2vec.h5,0.5820277333259583,0.6828333139419556,1107.097660779953
-6,perf_advanced_homemade_glove.h5,0.5392675995826721,0.7192500233650208,1106.4232108592987
-7,perf_advanced_tweetprep_wiki2vec.h5,0.5507513284683228,0.721666693687439,1106.755138874054
-8,perf_advanced_tweetprep_glove.h5,0.4849141836166382,0.7614166736602783,1124.8285164833069
-9,perf_advanced_noclean_glove.h5,0.489463746547699,0.7604166865348816,1287.484095811844
+,Name,Loss,Accuracy,Training time,Epochs
+0,DistilBERT,0.169,0.942,1426.952,3
+1,BiLSTM - no cleaning - GloVe,0.484,0.764,879.08,10
+2,BiLSTM - tweetprep - Glove,0.483,0.763,871.297,10
+3,Logistic regression baseline,,0.74,4.62,-
+4,Simple NN - no cleaning - GloVe,0.551,0.726,5.599,9
+5,Simple NN - tweetprep - GloVe,0.55,0.723,5.626,9
+6,BiLSTM - homemade - GloVe,0.536,0.72,868.518,1
+7,BiLSTM - tweetprep - wiki2vec,0.554,0.715,930.756,10
+8,Simple NN - homemade - GloVe,0.571,0.701,5.447,9
+9,BiLSTM - homemade - wiki2vec,0.585,0.68,763.926,10
+10,Simple NN - tweetprep - wiki2vec,0.599,0.678,5.155,8
+11,Simple NN - homemade - wiki2vec,0.622,0.655,6.305,10
